@@ -9,7 +9,7 @@ def get_data():
     {"id": 2, "name": "Kim", "sales": 1250},
     {"id": 3, "name": "Jury", "sales": 850},
   ]
-  return JSONResponse(content=sample_data)
+  return jsonify(sample_data)
 
 if __name__ == "__main__":
   app.run(host="0.0.0.0", port=10000)
